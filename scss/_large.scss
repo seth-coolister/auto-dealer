@@ -17,6 +17,15 @@ nav {
     }
 }
 
+#hero{
+    picture{
+        img{
+            max-height: 50vh;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
 main {
     #serviceWrapper {
         section{
