@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+  <head>
+    <title>Car Werk</title>
+    <meta name="description" content="Seth's Sample Start File with SCSS">
+    <meta name="author" content="Seth Callister">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <!-- fav icon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+  </head>
+
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <div class="wordIcon">
+          <img src="images/logo.png" alt="logo" width="40" height="40"> 
+          <h1>Car Werk</h1>
+        </div>
+        <a href="tel:14414652394">14 41 465 23 94</a>
+      </header>
+    </div>
+
+    <div id="navWrapper">
+      <nav>
+        <button id="hamburger"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Parts</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="mainWrapper">
+
+      <div id="hero">
+        <picture class="hero">
+          <source media="(min-width: 64rem)" srcset="images/hero-lg.jpg">
+          <source media="(min-width: 35rem)" srcset="images/hero-md.jpg">
+          <img src="images/hero-sm.jpg" alt="Hero">
+        </picture>
+        <h1>For When Your Car Don't Werk</h1>
+      </div>
+
+      <main>
+        <h1>Services</h1>
+        <p>
+          Your car is like your BFF, always there for you, ready to hit the road and take on the world. But just like you need a little TLC to stay fab, your car needs some love too! From oil changes to tire rotations, Car Werk has your back with top-notch services to keep your ride looking fierce and flawless. So, when your car needs a little extra glam, don't sweat it, just roll up to Car Werk and let us take care of the rest! 🚗💅✨ #CarGlamSquad
+        </p>
+
+        <div id="serviceWrapper">
+
+          <section class="strobe">
+            <img src="images/warning-outline.svg" alt="warning" height="128px" width="128px">
+            <h2>Warning Lights</h2>
+            <p>
+              When your car's feeling off, it's like it's dropping hints with flashy lights, saying, "Hey, check me out!" Each light's like a song on shuffle, telling you where the trouble's at. So, when those lights pop, it's time for a car check-up before it decides to ghost you on the road.
+            </p>
+            <button>Learn More</button>
+          </section>
+
+          <section class="bounce">
+            <img src="images/oil.svg" alt="oil" height="128px" width="128px">
+            <h2>Oil Change</h2>
+            <p>
+              Oil change services are like a quick makeover for your car's engine, keeping it feeling fresh and ready to hit the road. It's like giving your ride a shot of energy to keep it running smoothly and looking sleek. So, when your car needs a pick-me-up, an oil change is the way to go!
+            </p>
+            <button>Learn More</button>
+          </section>
+
+          <section class="spin">
+            <img src="images/speedometer-outline.svg" alt="speedometer" height="128px" width="128px">
+            <h2>Maintenance</h2>
+            <p>
+              Car maintenance service is like a red carpet treatment for your ride, keeping it shining on the streets. It's like a tune-up session, ensuring your car stays road-ready for its next adventure. So, when your vehicle needs a boost, schedule that maintenance service and keep rolling like a star!
+            </p>
+            <button>Learn More</button>
+          </section>
+
+          <section class="pulse">
+            <img src="images/car-outline.svg" alt="car" height="128px" width="128px">
+            <h2>Tires</h2>
+            <p>
+              Tire services are like giving your car a fresh pair of kicks, getting it ready to hit the road runway in style. It's like a fashion upgrade for your ride, ensuring it stays both sleek and safe for every journey. So, when your wheels need some TLC, roll into tire services and treat your car!
+            </p>
+            <button>Learn More</button>
+          </section>
+
+        </div><!--end service-->
+
+        <div id="reviewWrapper">
+          <h2>What Our Girlies Say</h2>
+          <div id="reviewList"></div><!--end reviews-->
+        </div>
+
+      </main>
+    </div>
+
+    
+
+    <div id="footerWrapper">
+
+      <footer>
+
+        <div>
+
+          <section class="contact">
+            <p><ion-icon name="person-outline"></ion-icon>Seth Callister</p>
+            <p><ion-icon name="home-outline"></ion-icon>Car Werk, LLC</p>
+            <p><a href="mailto:sethcallister@sethsdiner.com"><ion-icon name="mail-outline"></ion-icon>sethcallister@carwerk.com</a></p>
+            <p><a href="https://sethsdiner.com"><ion-icon name="globe-outline"></ion-icon>sethsdiner.com</a></p>
+            <p><a href="tel:14414652394"><ion-icon name="phone-portrait-outline"></ion-icon>14 41 465 23 94</a></p>
+          </section>
+
+          <section class="location">
+            <address>6151 Stratler Str<br>Murray, UT<br>84107</address>
+          </section>
+
+          <section class="social">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </section>
+          
+        </div>
+
+        <p class="legal">&copy; Seth Callister <span id="year"></span></p>
+
+      </footer>
+    </div>
+
+    <script src="js/scripts.js" type="module"></script>
+    <script src="js/reviews.js" type="module"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+
+  </body>
+
+</html>

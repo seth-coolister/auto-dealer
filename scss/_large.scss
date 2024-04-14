@@ -1,0 +1,33 @@
+header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+}
+
+nav {
+
+    button{ display: none; }
+
+    ul{
+        display: flex;
+        border: none;
+        &.open{display: flex;}
+        margin-left: $gutter;
+        li { border: none; }
+
+    }
+}
+
+main {
+    #serviceWrapper {
+        section{
+            flex-basis: calc(25% - (($gutter * 3)/4));
+        }
+    }
+}
+
+footer {
+    div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
