@@ -21,11 +21,11 @@ reviews.forEach(review => {
 
     const reviewRating = document.createElement('div');
     const reviewStars = document.createElement('img');
-    reviewStars.src = '/images/star.svg';
+    reviewStars.src = '/auto-dealer/images/star.svg';
 
     for (let i = 0; i < review.rating; i++) {
         const star = document.createElement('img');
-        star.src = '/images/star.svg';
+        star.src = '/auto-dealer/images/star.svg';
         reviewRating.appendChild(star);
     }
 
